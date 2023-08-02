@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaskaran Singh - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color:white;
+            color: #58490b;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(243, 243, 247);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+
+            font-size: 3rem;
+        }
+
+        .rightsection img {
+            width: 100%;
+            margin: 50px 0;
+        }
+        .text-grey{
+            color: rgb(145, 145, 145);
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Jaskaran Portfolio </div>
+            <div class="right">
+                <ul>
+                    <a href="/">
+                        <li>Home</li>
+                    </a>
+                    <a href="/">
+                        <li>About</li>
+                    </a>
+                    <a href="/">
+                        <li>Services</li>
+                    </a>
+                    <a href="/">
+                        <li>Contact Me</li>
+                    </a>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftsection">
+                Hello,my name is Jaskaran Singh
+                <div>And I am a Web Developer and my major is data science</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="IMG_20230421_220725_316.jpg" alt="">
+            </div>
+
+        </section>
+        <hr>
+
+        <section class="secondsection">
+            <span class="text-grey">what i have studied so far</span>
+
+            <h1> Educational Qualification</h1>
+            <div class="box"></div>
+        </section>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'data scientist'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
